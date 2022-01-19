@@ -1,0 +1,23 @@
+{
+  "name": "web-extension-typescript-template",
+  "description": "A Typescript template for web extension development",
+  "version": "1.0.0",
+  "permissions": [],
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "dist/bundle.js"
+      ]
+    }
+  ],
+  "icons": {
+    "128": "resources/icons/icon_128.png",
+    "48": "resources/icons/icon_48.png",
+    "32": "resources/icons/icon_32.png",
+    "16": "resources/icons/icon_16.png"
+  }
+}
